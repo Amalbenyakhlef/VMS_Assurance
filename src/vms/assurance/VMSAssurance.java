@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXML.java to edit this template
  */
 package vms.assurance;
+import java.io.IOException;
 import java.text.ParseException;
 import models.*;
 
@@ -41,13 +42,14 @@ public class VMSAssurance extends Application {
     
     
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+    public void start(Stage stage) throws Exception,IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/loginClient.fxml"));
         
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
         stage.show();
+         stage.setResizable(true);
     }
 
     
