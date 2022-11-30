@@ -14,7 +14,7 @@ public class ContratVoiture extends Contrat {
     
     private String marque;
     private String modele;
-    private int cylindree;
+ 
     private Date dateMiseEnCirculation;
     private String niveauCouverture;
     private String typeVehicule;
@@ -23,7 +23,7 @@ public class ContratVoiture extends Contrat {
         super(id, dc, db, df, prix);
         this.marque = marque;
         this.modele = modele;
-        this.cylindree = cylindree;
+        
         this.dateMiseEnCirculation = dateMiseEnCirculation;
         this.niveauCouverture = niveauCouverture;
         this.typeVehicule = typeVehicule;
@@ -60,16 +60,7 @@ public class ContratVoiture extends Contrat {
     /**
      * @return the cylindree
      */
-    public int getCylindree() {
-        return cylindree;
-    }
 
-    /**
-     * @param cylindree the cylindree to set
-     */
-    public void setCylindree(int cylindree) {
-        this.cylindree = cylindree;
-    }
 
     /**
      * @return the dateMiseEnCirculation
