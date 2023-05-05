@@ -17,8 +17,8 @@ public class ContratSante extends Contrat {
     private float hospitaliers;
     private float niveauCouverture;  //juste pour des informations supplémentaires au niveau d'affichage !!!!
 
-    public ContratSante(float medicauxGeneraliste, float medicauxSpecialiste, float optique, float hospitaliers, float niveauCouverture, int id, Date dc, Date db, Date df, float prix) {
-        super(id, dc, db, df, prix);
+    public ContratSante(float medicauxGeneraliste, float medicauxSpecialiste, float optique, float hospitaliers, float niveauCouverture, int idClient, int IdContrat, String dateCreation, String dateDebut, String dateFin, float prix, String valider) {
+        super(idClient, IdContrat, dateCreation, dateDebut, dateFin, prix, valider);
         this.medicauxGeneraliste = medicauxGeneraliste;
         this.medicauxSpecialiste = medicauxSpecialiste;
         this.optique = optique;
@@ -26,9 +26,10 @@ public class ContratSante extends Contrat {
         this.niveauCouverture = niveauCouverture;
     }
 
+  
+   
 
 
- 
 
     /**
      * @return the medicauxGeneraliste

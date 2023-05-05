@@ -11,98 +11,70 @@ import java.util.Date;
  * @author admin
  */
 public class ContratVoiture extends Contrat {
+    private String matricule;
     
     private String marque;
     private String modele;
  
-    private Date dateMiseEnCirculation;
+  
     private String niveauCouverture;
-    private String typeVehicule;
 
-    public ContratVoiture(String marque, String modele, int cylindree, Date dateMiseEnCirculation, String niveauCouverture, String typeVehicule, int id, Date dc, Date db, Date df, float prix) {
-        super(id, dc, db, df, prix);
+    public ContratVoiture(String matricule, String marque, String modele, String niveauCouverture, int idClient, int IdContrat, String dateCreation, String dateDebut, String dateFin, float prix, String valider) {
+        super(idClient, IdContrat, dateCreation, dateDebut, dateFin, prix, valider);
+        this.matricule = matricule;
         this.marque = marque;
         this.modele = modele;
-        
-        this.dateMiseEnCirculation = dateMiseEnCirculation;
         this.niveauCouverture = niveauCouverture;
-        this.typeVehicule = typeVehicule;
     }
 
-    /**
-     * @return the marque
-     */
+ 
+ 
+
+  
+ 
+
+    public String getMatricule() {
+        return matricule;
+    }
+
+    public void setMatricule(String matricule) {
+        this.matricule = matricule;
+    }
+
+ 
+
+
     public String getMarque() {
         return marque;
     }
 
-    /**
-     * @param marque the marque to set
-     */
     public void setMarque(String marque) {
         this.marque = marque;
     }
 
-    /**
-     * @return the modele
-     */
     public String getModele() {
         return modele;
     }
 
-    /**
-     * @param modele the modele to set
-     */
     public void setModele(String modele) {
         this.modele = modele;
     }
 
-    /**
-     * @return the cylindree
-     */
 
 
-    /**
-     * @return the dateMiseEnCirculation
-     */
-    public Date getDateMiseEnCirculation() {
-        return dateMiseEnCirculation;
-    }
+ 
 
-    /**
-     * @param dateMiseEnCirculation the dateMiseEnCirculation to set
-     */
-    public void setDateMiseEnCirculation(Date dateMiseEnCirculation) {
-        this.dateMiseEnCirculation = dateMiseEnCirculation;
-    }
-
-    /**
-     * @return the niveauCouverture
-     */
     public String getNiveauCouverture() {
         return niveauCouverture;
     }
 
-    /**
-     * @param niveauCouverture the niveauCouverture to set
-     */
     public void setNiveauCouverture(String niveauCouverture) {
         this.niveauCouverture = niveauCouverture;
     }
 
-    /**
-     * @return the typeVehicule
-     */
-    public String getTypeVehicule() {
-        return typeVehicule;
-    }
 
-    /**
-     * @param typeVehicule the typeVehicule to set
-     */
-    public void setTypeVehicule(String typeVehicule) {
-        this.typeVehicule = typeVehicule;
-    }
+
+
   
    
 

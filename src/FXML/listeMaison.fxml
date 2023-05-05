@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ListeMaisonController">
+   <children>
+      <ImageView fitHeight="551.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sidebar.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="home" layoutX="28.0" layoutY="192.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="26.0" prefWidth="82.0" text="Button" />
+      <Button fx:id="btnsan" layoutX="51.0" layoutY="232.0" mnemonicParsing="false" onAction="#sante" opacity="0.0" prefHeight="26.0" prefWidth="82.0" text="Button" />
+      <Button fx:id="btnvoi" layoutX="42.0" layoutY="272.0" mnemonicParsing="false" onAction="#voiture" opacity="0.0" prefHeight="26.0" prefWidth="82.0" text="Button" />
+      <Button fx:id="btnsinistre" layoutX="21.0" layoutY="354.0" mnemonicParsing="false" onAction="#sinistre" prefHeight="26.0" prefWidth="123.0" text="Liste des sinistres" />
+      <Button fx:id="home1" layoutX="29.0" layoutY="451.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="78.0" prefWidth="106.0" text="Button" />
+      <Button fx:id="btnm" layoutX="43.0" layoutY="308.0" mnemonicParsing="false" onAction="#maison" opacity="0.0" prefHeight="26.0" prefWidth="82.0" text="Button" />
+      <TableView fx:id="table" layoutX="166.0" prefHeight="418.0" prefWidth="823.0">
+        <columns>
+          <TableColumn fx:id="cilid" prefWidth="75.0" text="IDcontrat" />
+          <TableColumn fx:id="colclient" prefWidth="61.60005187988281" text="IDclient" />
+            <TableColumn fx:id="colcrea" prefWidth="88.79998779296875" text="Date Création" />
+            <TableColumn fx:id="coldeb" prefWidth="75.0" text="Date Debut" />
+            <TableColumn fx:id="colfin" prefWidth="75.0" text="Date Fin" />
+            <TableColumn fx:id="colprix" prefWidth="58.39996337890625" text="Prix" />
+            <TableColumn fx:id="colville" prefWidth="72.800048828125" text="Ville" />
+            <TableColumn fx:id="colRue" prefWidth="80.800048828125" text="Num Rue" />
+            <TableColumn fx:id="colpostal" prefWidth="81.5999755859375" text="Code Postal" />
+            <TableColumn fx:id="colgarantie" prefWidth="85.5999755859375" text="NivGarantie" />
+            <TableColumn fx:id="colvalider" prefWidth="75.0" text="Valider" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnvalider" layoutX="399.0" layoutY="464.0" mnemonicParsing="false" onAction="#valider" prefHeight="52.0" prefWidth="125.0" text="Valider ce contrat" />
+      <Button fx:id="btnsupprimer" layoutX="607.0" layoutY="464.0" mnemonicParsing="false" onAction="#delete" prefHeight="52.0" prefWidth="144.0" text="Supprimer ce contrat" />
+   </children>
+</AnchorPane>

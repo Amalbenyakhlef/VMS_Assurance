@@ -16,17 +16,26 @@ import java.util.stream.IntStream;
  */
 public class Client extends personne {
     private int idClient;
-    private int nbSinistresFaits;
-    private ArrayList<Contrat> ListContrat;
-    
-    
-    
-    public Client(String nom,String prenom,String password,String email,String tel,Date datenaiss,int idClient,int nbSinistresFaits){
-        super( nom, prenom, password, email,tel, datenaiss);
-        this.idClient=idClient;
-        this.nbSinistresFaits=nbSinistresFaits;
-        ListContrat= new ArrayList();
+
+    public Client(int idClient, String nom, String prenom, String password, String email, String tel, String datenaiss) {
+        super(nom, prenom, password, email, tel, datenaiss);
+        this.idClient = idClient;
     }
+
+  
+
+    public int getIdClient() {
+        return idClient;
+    }
+
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
+    }
+   
+    
+    
+    
+  
     
     
     

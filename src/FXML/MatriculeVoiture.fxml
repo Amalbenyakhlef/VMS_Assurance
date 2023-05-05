@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VoitureController">
+   <children>
+      <ImageView fitHeight="540.0" fitWidth="839.0" layoutX="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MatriculeVoiture.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAssurer" layoutX="555.0" layoutY="146.0" mnemonicParsing="false" onAction="#assurerVoiture" opacity="0.0" prefHeight="51.0" prefWidth="112.0" style="-fx-background-radius: 10;" text="Button" />
+      <TextField fx:id="matricule0" layoutX="309.0" layoutY="147.0" prefHeight="50.0" prefWidth="188.0" promptText="300TN1299" style="-fx-background-color: rose;">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="57.0" fitWidth="122.0" layoutX="681.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/buttonSinistre.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSinistre" layoutX="681.0" layoutY="146.0" mnemonicParsing="false" onAction="#Constat" opacity="0.0" prefHeight="51.0" prefWidth="122.0" style="-fx-background-radius: 15;" text="Button" />
+      <ImageView fitHeight="52.0" fitWidth="72.0" layoutX="742.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/homeIcon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnHome1" layoutX="760.0" layoutY="21.0" mnemonicParsing="false" onAction="#homeMatricule" opacity="0.0" prefHeight="28.0" prefWidth="35.0" text="h" />
+      <ImageView fitHeight="61.0" fitWidth="150.0" layoutX="57.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Id%20client%20.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="51.0" layoutX="45.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/previous.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnservice" layoutX="47.0" layoutY="16.0" mnemonicParsing="false" onAction="#serviceClient" opacity="0.0" prefHeight="37.0" prefWidth="35.0" style="-fx-background-radius: 20;" text="Button" />
+      <Label fx:id="lab2" layoutX="114.0" layoutY="152.0" prefHeight="39.0" prefWidth="72.0" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

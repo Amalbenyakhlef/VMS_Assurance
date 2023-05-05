@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="527.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InterfaceAdminController">
+   <children>
+      <ImageView fitHeight="540.0" fitWidth="840.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Dashboard.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn7Client" layoutX="332.0" layoutY="192.0" mnemonicParsing="false" onAction="#client" opacity="0.0" prefHeight="38.0" prefWidth="60.0" text="Button" />
+      <Button fx:id="btn10sante" layoutX="138.0" layoutY="308.0" mnemonicParsing="false" onAction="#sante" opacity="0.05" prefHeight="38.0" prefWidth="110.0" text="Button" />
+      <Button fx:id="btn11voiture" layoutX="300.0" layoutY="308.0" mnemonicParsing="false" onAction="#voiture" opacity="0.0" prefHeight="38.0" prefWidth="110.0" text="Button" />
+   
+      <Button fx:id="btn3voiture" layoutX="41.0" layoutY="263.0" mnemonicParsing="false" onAction="#voiture" opacity="0.0" prefHeight="26.0" prefWidth="83.0" text="Button">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn2sante" layoutX="45.0" layoutY="223.0" mnemonicParsing="false" onAction="#sante" opacity="0.0" prefHeight="26.0" prefWidth="75.0" text="Button">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnm1" layoutX="45.0" layoutY="300.0" mnemonicParsing="false" onAction="#maison" opacity="0.0" prefHeight="26.0" prefWidth="75.0" text="Button">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn1home" layoutX="45.0" layoutY="185.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="26.0" prefWidth="60.0" text="Button">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn6home" layoutX="20.0" layoutY="435.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="70.0" prefWidth="99.0" text="Button">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="139.0" fitWidth="194.0" layoutX="-35.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/317616666_531370372228491_2319708606553893396_n.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSan" layoutX="177.0" layoutY="320.0" mnemonicParsing="false" onAction="#sante" opacity="0.0" prefHeight="180.0" prefWidth="187.0" text="Button" />
+      <Button fx:id="btnm" layoutX="641.0" layoutY="322.0" mnemonicParsing="false" onAction="#maison" opacity="0.0" prefHeight="170.0" prefWidth="187.0" text="Button" />
+      <Button fx:id="btnvoi" layoutX="409.0" layoutY="320.0" mnemonicParsing="false" onAction="#voiture" opacity="0.0" prefHeight="180.0" prefWidth="187.0" text="Button" />
+      <Button fx:id="btnsinistre" graphicTextGap="1.0" layoutX="29.0" layoutY="340.0" mnemonicParsing="false" onAction="#sinistre" prefHeight="26.0" prefWidth="92.0" text="Liste des sinistres">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Label fx:id="sante" layoutX="189.0" layoutY="377.0" prefHeight="48.0" prefWidth="54.0" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label fx:id="voiture" layoutX="431.0" layoutY="377.0" prefHeight="48.0" prefWidth="54.0" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label fx:id="maison" layoutX="674.0" layoutY="377.0" prefHeight="48.0" prefWidth="60.0" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

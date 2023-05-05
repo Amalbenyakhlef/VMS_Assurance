@@ -15,10 +15,10 @@ public class personne {
     private String password;
     private String email;
     private String tel;
-    private Date datenaiss;
+    private String datenaiss;
     
     
-    public personne(String nom,String prenom,String password,String email,String tel,Date datenaiss){
+    public personne(String nom,String prenom,String password,String email,String tel,String datenaiss){
         this.nom=nom;
         this.prenom=prenom;
         this.password=password;
@@ -41,6 +41,14 @@ public class personne {
     }
     public String getEmail(){
         return email;
+    }
+
+    public String getDatenaiss() {
+        return datenaiss;
+    }
+
+    public void setDatenaiss(String datenaiss) {
+        this.datenaiss = datenaiss;
     }
 
    

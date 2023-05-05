@@ -17,100 +17,84 @@ import java.util.UUID;
  */
 
 public abstract class Contrat {
+  
+    private int idClient;
     private int IdContrat;
-    private Date dateCreation;
-    private Date dateDebut;
-    private Date dateFin ;
-    private float prix;          // not yet ***************** 
- 
-    
-    
-    public Contrat (int id,Date dc, Date db,Date df, float prix){  //ObjectInputFilter.Status st
-        IdContrat= id;//a verifier dans le main ??????
-        dateCreation=dc;
-        dateDebut=db;
-        dateFin=df;
-        this.prix=prix;
-    
-        
+    private String dateCreation;
+    private String dateDebut;
+    private String dateFin ;
+    private float prix;  
+   private String valider;
+
+    public Contrat(int idClient, int IdContrat, String dateCreation, String dateDebut, String dateFin, float prix, String valider) {
+        this.idClient = idClient;
+        this.IdContrat = IdContrat;
+        this.dateCreation = dateCreation;
+        this.dateDebut = dateDebut;
+        this.dateFin = dateFin;
+        this.prix = prix;
+        this.valider = valider;
     }
 
-    /**
-     * @return the IdContrat
-     */
+    public String getValider() {
+        return valider;
+    }
+
+    public void setValider(String valider) {
+        this.valider = valider;
+    }
+
+ 
+
+    public int getIdClient() {
+        return idClient;
+    }
+
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
+    }
+
     public int getIdContrat() {
         return IdContrat;
     }
 
-    /**
-     * @param IdContrat the IdContrat to set
-     */
     public void setIdContrat(int IdContrat) {
         this.IdContrat = IdContrat;
     }
 
-    /**
-     * @return the dateCreation
-     */
-    public Date getDateCreation() {
+    public String getDateCreation() {
         return dateCreation;
     }
 
-    /**
-     * @param dateCreation the dateCreation to set
-     */
-    public void setDateCreation(Date dateCreation) {
+    public void setDateCreation(String dateCreation) {
         this.dateCreation = dateCreation;
     }
 
-    /**
-     * @return the dateDebut
-     */
-    public Date getDateDebut() {
+    public String getDateDebut() {
         return dateDebut;
     }
 
-    /**
-     * @param dateDebut the dateDebut to set
-     */
-    public void setDateDebut(Date dateDebut) {
+    public void setDateDebut(String dateDebut) {
         this.dateDebut = dateDebut;
     }
 
-    /**
-     * @return the dateFin
-     */
-    public Date getDateFin() {
+    public String getDateFin() {
         return dateFin;
     }
 
-    /**
-     * @param dateFin the dateFin to set
-     */
-    public void setDateFin(Date dateFin) {
+    public void setDateFin(String dateFin) {
         this.dateFin = dateFin;
     }
 
-    /**
-     * @return the prix
-     */
     public float getPrix() {
         return prix;
     }
 
-    /**
-     * @param prix the prix to set
-     */
     public void setPrix(float prix) {
         this.prix = prix;
     }
-    
-    
-    
-    
-  
 
- 
+    
     
     
 }

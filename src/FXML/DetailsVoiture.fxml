@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VoitureController">
+   <children>
+      <ImageView fitHeight="540.0" fitWidth="767.0" layoutX="-1.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/DetailsVoiture.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="marque" layoutX="191.0" layoutY="120.0" prefHeight="59.0" prefWidth="218.0" style="-fx-background-color: purpal;" />
+      <TextField fx:id="modele" layoutX="191.0" layoutY="179.0" prefHeight="51.0" prefWidth="218.0" style="-fx-background-color: purpal;" />
+      <Button fx:id="btnEnregistrer" layoutX="516.0" layoutY="224.0" mnemonicParsing="false" onAction="#enregistrer" opacity="0.0" prefHeight="42.0" prefWidth="142.0" style="-fx-background-radius: 30;" text="Button" />
+      <RadioButton fx:id="niveau50" layoutX="202.0" layoutY="245.0" mnemonicParsing="false" onAction="#choice" text="50%" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="choices" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="niveau80" layoutX="269.0" layoutY="245.0" mnemonicParsing="false" onAction="#choice" text="80%" textFill="WHITE" toggleGroup="$choices">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="niveau100" layoutX="340.0" layoutY="245.0" mnemonicParsing="false" onAction="#choice" text="100%" textFill="WHITE" toggleGroup="$choices">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></RadioButton>
+      <VBox layoutX="145.0" layoutY="216.0" prefHeight="29.0" prefWidth="155.0" />
+      <ImageView fx:id="Home" fitHeight="52.0" fitWidth="71.0" layoutX="666.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/homeIcon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnHome2" layoutX="679.0" layoutY="10.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="51.0" prefWidth="43.0" text="Button" />
+      <ImageView fx:id="previousImg" fitHeight="36.0" fitWidth="34.0" layoutX="21.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/previous.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnprevious" layoutX="21.0" layoutY="17.0" mnemonicParsing="false" onAction="#pageMatricule" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button" />
+      <Label fx:id="matricule" layoutX="144.0" layoutY="52.0" prefHeight="36.0" prefWidth="155.0" />
+      <Label fx:id="lab" layoutX="202.0" layoutY="70.0" prefHeight="51.0" prefWidth="207.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

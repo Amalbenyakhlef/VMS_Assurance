@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="542.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ServiceClientController">
+   <children>
+      <ImageView fitHeight="551.0" fitWidth="875.0" layoutX="-1.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Frame%2003.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="191.0" fitWidth="206.0" layoutX="306.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Group%202.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn2" layoutX="310.0" layoutY="337.0" mnemonicParsing="false" onAction="#voiture" opacity="0.0" prefHeight="185.0" prefWidth="155.0" text="Button" />
+      <Button fx:id="btn3" layoutX="549.0" layoutY="340.0" mnemonicParsing="false" onAction="#maison" opacity="0.0" prefHeight="177.0" prefWidth="145.0" text="Button" />
+      <ImageView fitHeight="43.0" fitWidth="46.0" layoutX="14.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/preced.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="home0" layoutX="14.0" layoutY="485.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="43.0" prefWidth="43.0" text="Button" />
+      <Label layoutX="16.0" layoutY="294.0" prefHeight="32.0" prefWidth="43.0" text="code:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="lab1" layoutX="57.0" layoutY="299.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button fx:id="btn1" layoutX="83.0" layoutY="342.0" mnemonicParsing="false" onAction="#sante" opacity="0.0" prefHeight="177.0" prefWidth="155.0" text="Button" />
+   </children>
+</AnchorPane>

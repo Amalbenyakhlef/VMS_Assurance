@@ -43,7 +43,7 @@ public class VMSAssurance extends Application {
     
     @Override
     public void start(Stage stage) throws Exception,IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/FXML/loginClient.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/home0.fxml"));
         
         Scene scene = new Scene(root);
         

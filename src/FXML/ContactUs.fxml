@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="769.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="Controller.ContactUsController">
+   <children>
+      <ImageView fitHeight="549.0" fitWidth="777.0" layoutX="-1.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ContactUs.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtNamePrenom" layoutX="148.0" layoutY="168.0" prefHeight="32.0" prefWidth="185.0" promptText="Nom et prenom" />
+      <TextField fx:id="txtEmail" layoutX="148.0" layoutY="220.0" prefHeight="32.0" prefWidth="185.0" promptText="Email" />
+      <TextArea fx:id="txtMsg" layoutX="147.0" layoutY="270.0" prefHeight="96.0" prefWidth="185.0" promptText="ce que vous voulez nous dire" />
+      <Button fx:id="btnEnvoyer" layoutX="206.0" layoutY="390.0" mnemonicParsing="false" onAction="#Envoyer" opacity="0.0" prefHeight="25.0" prefWidth="57.0" text="Button" />
+   </children>
+</AnchorPane>
